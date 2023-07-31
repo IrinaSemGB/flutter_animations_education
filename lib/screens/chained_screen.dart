@@ -128,14 +128,6 @@ class _ChainedScreenState extends State<ChainedScreen> with TickerProviderStateM
   @override
   Widget build(BuildContext context) {
 
-    // Future.delayed(Duration(milliseconds: 1000), () {
-    //   _clockwiseAnimationController
-    //     ..reset()
-    //     ..forward();
-    // });
-
-    // или можно тоже самое записать так, вынеся delayed в отдельную функцию
-
     _clockwiseAnimationController..reset()..forward.delayed(Duration(milliseconds: 1000));
 
     return Scaffold(
