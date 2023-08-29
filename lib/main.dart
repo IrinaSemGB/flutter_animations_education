@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animations_education/screens/chained_screen.dart';
 import 'package:flutter_animations_education/screens/effect_3d_screen.dart';
+import 'package:flutter_animations_education/screens/hero_animation_screen.dart';
 import 'package:flutter_animations_education/screens/transform_screen.dart';
 
 void main() {
@@ -16,11 +17,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      initialRoute: Effect3DScreen.id,
+      initialRoute: HeroAnimationScreen.id,
       routes: {
         TransformScreen.id: (context) => TransformScreen(),
         ChainedScreen.id: (context) => ChainedScreen(),
         Effect3DScreen.id: (context) => Effect3DScreen(),
+        HeroAnimationScreen.id: (context) => HeroAnimationScreen(),
       },
     );
   }
